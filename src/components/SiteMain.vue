@@ -34,20 +34,7 @@
         <div class="position-relative">
           <span class="chevron left"><i class="fas fa-chevron-left"></i></span>
           <div class="row">
-            <div class="col-6">
-              <img
-                src="../assets/img/choco-chip-cookies.jpg"
-                alt="logo baker purple"
-                width=""
-              />
-            </div>
-            <div class="col-6">
-              <img
-                src="../assets/img/strawberry-jam-cookies.jpg"
-                alt="logo baker purple"
-                width=""
-              />
-            </div>
+            <Product v-for="product in products" :key="product.name" :productImage="product.image" :productName="product.name"/>
           </div>
           <!-- /.row -->
           <span class="chevron right"><i class="fas fa-chevron-right"></i></span>
@@ -59,7 +46,30 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import Product from '../components/Product.vue'
+export default {
+  components: {
+    Product
+  },
+  data () {
+    return {
+      products: [
+        {
+          name: 'choco cookies',
+          image: '/img/choco-chip-cookies.e61c9225.jpg'
+        },
+        {
+          name: 'strawberry cookies',
+          image: '/img/strawberry-jam-cookies.ed8f6ca5.jpg'
+        }
+      ]
+
+    }
+  }
+}
+
+</script>
 
 <style lang="scss">
 .jumbotron {
@@ -128,14 +138,6 @@
 }
 .col-4 {
   padding: 0rem 1rem;
-}
-.col-6 {
-  & img {
-    width: 100%;
-    display: block;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 .chevron {
     position: absolute;
