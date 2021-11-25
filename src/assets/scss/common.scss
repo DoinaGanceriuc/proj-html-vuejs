@@ -10,3 +10,15 @@ body {
   width: 90%;
   margin: auto;
 }
+.small_text {
+  color: $color_small;
+  font-size: 0.5rem;
+}
+.title {
+  padding-top: 1rem;
+  color: $color_title;
+  font-weight: 700;
+}
+.p5 {
+  padding: 5rem 0;
+}

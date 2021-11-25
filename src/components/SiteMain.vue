@@ -4,8 +4,8 @@
       <div class="jumbotron">
         <div class="container">
           <section class="text_jumbo">
-            <small>FRESH & TASTY BAKERY EVERY DAY</small>
-            <h1>The Perfect Fresh Bread</h1>
+            <small class="small_text">FRESH & TASTY BAKERY EVERY DAY</small>
+            <h1 class="title">The Perfect Fresh Bread</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               pariatur iure officiis, excepturi nemo laborum ipsam explicabo non
@@ -20,13 +20,13 @@
         <!-- /.container -->
       </div>
       <!-- /.jumbotron -->
-      <section class="cookies container d-flex">
+      <section class="cookies container d-flex p5">
         <div class="col-4">
-          <small>OUR PRODUCTS</small>
-          <h2 class="pb-5">
+          <small class="small_text">OUR PRODUCTS</small>
+          <h3 class="pb-5 title">
             All our delectable pastries are backed fresh in our Kitchen very
             morning, and are made with all-natural, all organi ingredients.
-          </h2>
+          </h3>
           <div class="btn">
             <a href="#">Start Shopping</a>
           </div>
@@ -34,13 +34,26 @@
         <div class="position-relative">
           <span class="chevron left"><i class="fas fa-chevron-left"></i></span>
           <div class="row">
-            <Product v-for="product in products" :key="product.name" :productImage="product.image" :productName="product.name"/>
+            <Product v-for="product in products" :key="product.name" :productImage="product.image"/>
           </div>
           <!-- /.row -->
           <span class="chevron right"><i class="fas fa-chevron-right"></i></span>
         </div>
       </section>
       <!-- /.cookies -->
+      <section class="moments container p5">
+         <div class="text-center">
+           <small class="small_text">CORPORATE & WEDDINGS</small>
+          <h3 class="pb-5 title">
+            Baking Special Moments
+          </h3>
+         </div>
+         <div class="row">
+            <Product v-for="product in events" :key="product.name" :productImage="product.image"/>
+          </div>
+          <!-- /.row -->
+      </section>
+      <!-- /.moments -->
     </main>
     <!-- /#site_main -->
   </div>
@@ -63,6 +76,16 @@ export default {
           name: 'strawberry cookies',
           image: '/img/strawberry-jam-cookies.ed8f6ca5.jpg'
         }
+      ],
+      events: [
+        {
+          name: 'corporate',
+          image: '/img/corporate-bg.e8de1342.jpg'
+        },
+        {
+          name: 'wedding',
+          image: '/img/wedding-bg.9ccfad4d.jpg'
+        }
       ]
 
     }
@@ -81,15 +104,8 @@ export default {
 .text_jumbo {
   max-width: 330px;
   padding: 9rem 0 9rem 0;
-  & small {
-    color: #8c8693;
-    font-size: 0.5rem;
-  }
   & h1 {
-    padding-top: 1rem;
-    color: #614093;
     font-size: 2.5rem;
-    font-weight: 700;
   }
   & p {
     padding: 2rem 0;
@@ -111,15 +127,7 @@ export default {
   }
 }
 .cookies {
-  padding: 5rem 0;
-  & small {
-    color: #8c8693;
-    font-size: 0.5rem;
-  }
-  & h2 {
-    padding-top: 1rem;
-    color: #614093;
-    font-weight: 600;
+  & h3 {
     font-size: 1.75rem;
   }
   & .btn {
