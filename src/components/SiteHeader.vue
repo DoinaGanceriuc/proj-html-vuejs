@@ -21,7 +21,7 @@ export default {
   },
   data () {
     return {
-      lists: ['shop', 'about', 'gallery', 'locations', 'journal', 'contact', 'my account', 'carrello']
+      lists: ['shop', 'about', 'gallery', 'locations', 'journal', 'contact', 'my account']
 
     }
   }

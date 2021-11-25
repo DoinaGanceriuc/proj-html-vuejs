@@ -3,6 +3,7 @@
     <ul>
       <li class="active">HOME</li>
        <li v-for="list in lists" :key="list">{{list.toUpperCase()}}</li>
+       <li><i class="fas fa-shopping-cart"></i></li>
     </ul>
 
   </div>
