@@ -94,6 +94,32 @@
         </div>
       </section>
       <!-- /.opinions -->
+      <section class="mass_produced">
+        <div class="container">
+          <div class="row p-5 justify-content-between">
+            <div class="col-6 d-flex justify-content-between baking p-5">
+              <div class="col-8 d-flex flex-column justify-content-between align-items-start">
+                 <h2 class="fw-bold mt-2">We Start Baking</h2>
+                <div>
+                <small class="small_text_bg">SWEET & DELICIOUS</small>
+                <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ipsum odit dolorum corporis omnis hic fugit accusamus. Magnam, voluptatem, consequuntur at beatae totam quis quaerat nostrum porro, dignissimos laudantium iste.</p>
+              </div>
+            </div>
+              <div>
+                 <p class="text_numbers fw-light">02</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="bg_founder">
+                <small class="small_text_bg">DONT JUST TAKE OUR WORD FOR IT</small>
+                <h2 class=" title">"Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity."</h2>
+                 <small class="small_text_bg">Rachel Cooper, Founder</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.mass_produced -->
     </main>
     <!-- /#site_main -->
   </div>
@@ -230,9 +256,28 @@ export default {
     h2 {
       font-size: 2.5rem;
     }
-    .text_numbers {
-      font-size: 3rem;
-    }
   }
+}
+.mass_produced {
+   .col-6 {
+    height: 500px;
+}
+.baking {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bakery-process-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+    h2 {
+      font-size: 2.5rem;
+    }
+}
+.bg_founder {
+  background-color: #F1EDF5;
+  height: 100%;
+  padding: 5rem;
+  small {
+    color: #99949F;
+  }
+}
 }
 </style>
