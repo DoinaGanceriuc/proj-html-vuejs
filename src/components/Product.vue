@@ -1,7 +1,7 @@
 <template>
   <div class="col-6" >
       <img
-        :src="productImage"
+        :src="require('../assets/img/' + productImage)"
         :alt="productName"
       />
   </div>

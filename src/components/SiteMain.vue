@@ -70,21 +70,21 @@ export default {
       products: [
         {
           name: 'choco cookies',
-          image: '/img/choco-chip-cookies.e61c9225.jpg'
+          image: 'choco-chip-cookies.jpg'
         },
         {
           name: 'strawberry cookies',
-          image: '/img/strawberry-jam-cookies.ed8f6ca5.jpg'
+          image: 'strawberry-jam-cookies.jpg'
         }
       ],
       events: [
         {
           name: 'corporate',
-          image: '/img/corporate-bg.e8de1342.jpg'
+          image: 'corporate-bg.jpg'
         },
         {
           name: 'wedding',
-          image: '/img/wedding-bg.9ccfad4d.jpg'
+          image: 'wedding-bg.jpg'
         }
       ]
 
