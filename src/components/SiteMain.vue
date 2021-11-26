@@ -12,7 +12,7 @@
               animi minus commodi impedit facere. Impedit explicabo esse numquam
               accusamus nostrum quae?
             </p>
-            <div class="btn">
+            <div class="btn_first">
               <a href="#">Explore our products</a>
             </div>
           </section>
@@ -137,6 +137,19 @@
           </div>
       </section>
       <!-- /.delivered -->
+      <section class="locations container p5">
+         <div class="text-center">
+           <small class="small_text">LOCATIONS</small>
+          <h3 class="pb-5 title">
+            Visit our Bakeries
+          </h3>
+         </div>
+         <div class="row gx-0">
+            <VisitBakery v-for="bakery in bakeries" :key="bakery.place" :bakeryImage="bakery.image" :bakeryPlace="bakery.place" :bakeryPhone="bakery.phone" :bakeryTiming="bakery.timing" :bakeryAddress="bakery.address" :class="{bg_color_first: bakery.isActive}"/>
+          </div>
+          <!-- /.row -->
+      </section>
+      <!-- /.locations -->
     </main>
     <!-- /#site_main -->
   </div>
@@ -145,14 +158,15 @@
 <script>
 import Product from '../components/Product.vue'
 import FoundedProduct from '../components/FoundedProduct.vue'
+import VisitBakery from '../components/VisitBakery.vue'
 export default {
   components: {
     Product,
-    FoundedProduct
+    FoundedProduct,
+    VisitBakery
   },
   data () {
     return {
-      ListNumbersCol: [6, 3],
       products: [
         {
           name: 'choco cookies',
@@ -194,6 +208,24 @@ export default {
           image: 'perfect-macarons.jpg',
           price: '$18.00 - $52.00'
         }
+      ],
+      bakeries: [
+        {
+          place: 'New York',
+          image: 'new-york-bk.jpg',
+          phone: '1.800.458.556',
+          timing: '9:00 AM - 6:00 PM',
+          address: 'View Map',
+          isActive: true
+        },
+        {
+          place: 'London',
+          image: 'london-bk.jpg',
+          phone: '1.800.458.556',
+          timing: '9:00 AM - 6:00 PM',
+          address: 'View Map',
+          isActive: false
+        }
       ]
     }
   }
@@ -220,18 +252,8 @@ export default {
     color: #8c8693;
     font-size: 0.75rem;
   }
-  & .btn {
-    background-color: #fff;
-    padding: 0.8rem 1.5rem;
-    text-align: center;
-    font-size: 0.75rem;
-    border: none;
+  .btn_first {
     width: 185px;
-    border-radius: 5px;
-    & a {
-      text-decoration: none;
-      color: #614093;
-    }
   }
 }
 .cookies {
@@ -308,5 +330,8 @@ export default {
   & .col-6 {
     height: 500px;
 }
+}
+.bg_color_first{
+  background-color: $bg_color_first;
 }
 </style>
