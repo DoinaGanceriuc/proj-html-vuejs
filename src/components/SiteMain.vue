@@ -118,25 +118,25 @@
         </div>
       </section>
       <!-- /.mass_produced -->
-      <section class="opinions">
-        <div class="container">
+      <section class="delivered container">
           <div class="row p-5">
-            <div class="col-6 pr_6">
-              <h2 class="fw-bold">Tell us what you have in mind</h2>
-            </div>
-            <div class="col-6 d-flex flex-column justify-content-between align-items-end">
-              <div>
-                 <p class="text_numbers fw-light">01</p>
-              </div>
+            <div class="col-6 d-flex justify-content-between baking">
+              <div class="col d-flex flex-column justify-content-between align-items-start">
+                 <h2 class="fw-bold mt-2">Delivered to your home</h2>
                 <div>
-                <small class="small_text_bg">MANUAL INGREDIENTS SELECTION</small>
-                <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ipsum odit dolorum corporis omnis hic fugit accusamus. Magnam, voluptatem, consequuntur at beatae totam quis quaerat nostrum porro, dignissimos laudantium iste.</p>
+                <small class="small_text_bg">BAKED TO ORDER & GIFT WRAPPED</small>
+                <p class="py-3 pe-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ipsum odit dolorum corporis omnis hic fugit accusamus. Magnam, voluptatem, consequuntur at beatae totam quis quaerat nostrum porro, dignissimos laudantium iste.</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <div>
+                 <p class="text_numbers fw-light">03</p>
               </div>
             </div>
           </div>
-        </div>
       </section>
-      <!-- /.opinions -->
+      <!-- /.delivered -->
     </main>
     <!-- /#site_main -->
   </div>
@@ -291,10 +291,22 @@ export default {
 .bg_founder {
   background-color: #F1EDF5;
   height: 100%;
-  padding: 5rem;
+  padding: 4rem;
   small {
     color: #99949F;
   }
+}
+}
+.delivered {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bakery-process-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+    h2 {
+      font-size: 2.5rem;
+    }
+  & .col-6 {
+    height: 500px;
 }
 }
 </style>
