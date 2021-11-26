@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6" >
+  <div class="col-6">
       <img
         :src="require('../assets/img/' + productImage)"
         :alt="productName"

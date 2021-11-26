@@ -34,7 +34,7 @@
         <div class="position-relative">
           <span class="chevron left"><i class="fas fa-chevron-left"></i></span>
           <div class="row">
-            <Product v-for="product in products" :key="product.name" :productImage="product.image"/>
+              <Product v-for="product in products" :key="product.name" :productImage="product.image"/>
           </div>
           <!-- /.row -->
           <span class="chevron right"><i class="fas fa-chevron-right"></i></span>
@@ -54,6 +54,27 @@
           <!-- /.row -->
       </section>
       <!-- /.moments -->
+      <section class="found_product container p5 d-flex">
+        <div class="col-3 text-center align-self-center pe-4">
+          <h3 class="title">
+            Find a freshly baked product perfect for you
+          </h3>
+          <p class="size_75 text_fresh_product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam ea totam repellendus nostrum iste veniam rem hic quidem quis error, obcaecati, recusandae accusantium? Cumque sequi in dolores laboriosam maxime!</p>
+          <div class="btn">
+            <a href="#">Shop All Products</a>
+          </div>
+        </div>
+        <div class="position-relative">
+          <span class="chevron left"><i class="fas fa-chevron-left"></i></span>
+          <div class="row">
+            <FoundedProduct v-for="product in foundedProducts" :key="product.name" :productImage="product.image" :productName="product.name" :productPrice="product.price"/>
+          </div>
+          <!-- /.row -->
+          <span class="chevron right"><i class="fas fa-chevron-right"></i></span>
+        </div>
+
+      </section>
+      <!-- /.found_product -->
     </main>
     <!-- /#site_main -->
   </div>
@@ -61,12 +82,15 @@
 
 <script>
 import Product from '../components/Product.vue'
+import FoundedProduct from '../components/FoundedProduct.vue'
 export default {
   components: {
-    Product
+    Product,
+    FoundedProduct
   },
   data () {
     return {
+      ListNumbersCol: [6, 3],
       products: [
         {
           name: 'choco cookies',
@@ -86,8 +110,29 @@ export default {
           name: 'wedding',
           image: 'wedding-bg.jpg'
         }
+      ],
+      foundedProducts: [
+        {
+          name: 'Choco Chip Cookies',
+          image: 'choco-chip-cookies.jpg',
+          price: '$19.00 - $39.00'
+        },
+        {
+          name: 'Strawberry Jam Cookies',
+          image: 'strawberry-jam-cookies.jpg',
+          price: '$24.00 - $62.00'
+        },
+        {
+          name: 'Strawberry Donut',
+          image: 'strawberry-donut.jpg',
+          price: '$24.00 - $42.00'
+        },
+        {
+          name: 'Perfect Macarons',
+          image: 'perfect-macarons.jpg',
+          price: '$18.00 - $52.00'
+        }
       ]
-
     }
   }
 }
@@ -95,6 +140,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/scss/variables.scss';
 .jumbotron {
   background-image: url("../assets/img/hero-header-bakery.jpg");
   background-size: cover;
@@ -130,19 +176,6 @@ export default {
   & h3 {
     font-size: 1.75rem;
   }
-  & .btn {
-    background-color: #55328b;
-    padding: 0.75rem 0.5rem;
-    text-align: center;
-    font-size: 0.75rem;
-    border: none;
-    width: 135px;
-    border-radius: 5px;
-    & a {
-      text-decoration: none;
-      color: #fff;
-    }
-  }
 }
 .col-4 {
   padding: 0rem 1rem;
@@ -163,5 +196,8 @@ export default {
     right: 0;
     top: 50%;
   }
+}
+.text_fresh_product {
+  color: $color_small;
 }
 </style>
