@@ -94,7 +94,7 @@
       <!-- /.opinions -->
       <section class="mass_produced">
         <div class="container">
-          <div class="row p-5 justify-content-between">
+          <div class="row py-5 ge-5 justify-content-between">
             <div class="col-6 d-flex justify-content-between baking p-5">
               <div class="col-8 d-flex flex-column justify-content-between align-items-start">
                  <h2 class="fw-bold mt-2">We Start Baking</h2>
@@ -107,7 +107,7 @@
                  <p class="text_numbers fw-light">02</p>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 pe-0">
               <div class="bg_founder">
                 <small class="small_text_bg">DONT JUST TAKE OUR WORD FOR IT</small>
                 <h2 class=" title">"Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity."</h2>
