@@ -150,6 +150,10 @@
           <!-- /.row -->
       </section>
       <!-- /.locations -->
+      <section class="sharing container p5">
+        <SocialProducts/>
+      </section>
+      <!-- /.sharing -->
     </main>
     <!-- /#site_main -->
   </div>
@@ -159,11 +163,13 @@
 import Product from '../components/Product.vue'
 import FoundedProduct from '../components/FoundedProduct.vue'
 import VisitBakery from '../components/VisitBakery.vue'
+import SocialProducts from '../components/SocialProducts.vue'
 export default {
   components: {
     Product,
     FoundedProduct,
-    VisitBakery
+    VisitBakery,
+    SocialProducts
   },
   data () {
     return {
