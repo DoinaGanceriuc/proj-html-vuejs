@@ -154,6 +154,18 @@
         <SocialProducts/>
       </section>
       <!-- /.sharing -->
+      <section class="orders">
+            <div class="container">
+              <div class="col-6">
+               <small class="small_text_bg">TRY OUR SEASONAL PRODUCTS</small>
+              <h2 class="fw-bold">Order for pick-up or delivery to your home</h2>
+              <div class="btn_first">
+                <a href="#">Shop Now</a>
+              </div>
+            </div>
+            </div>
+      </section>
+      <!-- /.opinions -->
     </main>
     <!-- /#site_main -->
   </div>
@@ -339,5 +351,22 @@ export default {
 }
 .bg_color_first{
   background-color: $bg_color_first;
+}
+.orders {
+  background-image: url("../assets/img/call-to-action-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  .col-6 {
+     padding: 5rem 0 5rem 5rem;
+
+    h2 {
+      font-size: 2.5rem;
+      padding: 0.5rem 0 3rem;
+ }
+ .btn_first {
+   width: 135px;
+ }
+}
 }
 </style>
