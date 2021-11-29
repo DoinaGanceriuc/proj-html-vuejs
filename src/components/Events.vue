@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/scss/variables.scss';
 .col-6 {
   .info_events {
     visibility: hidden;
@@ -54,11 +55,10 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
+    @include bg_image_cover_repeat;
+    color: $color_base;
     h2 {
-      color: #fff;
+      color: $color_base;
       padding: 1rem 0;
     }
     small {

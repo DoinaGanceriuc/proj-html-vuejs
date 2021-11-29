@@ -1,8 +1,18 @@
+/* color font */
 $color_small: #8c8693;
-/* $color_title: #614093; */
-$bg_color_first: #f1f9fb;
-$bg_color_second: #faf3e3;
-$bg_color_sharing: #f7f0f2;
 $color_primary: #55328b;
 $new_font_theme: #3698db;
 $color_chrevron: #55328b82;
+$color_base: #fff;
+
+/* color background */
+$bg_color_first: #f1f9fb;
+$bg_color_second: #faf3e3;
+$bg_color_sharing: #f7f0f2;
+$bg_dark_primary: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+/* mixin */
+@mixin bg_image_cover_repeat {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

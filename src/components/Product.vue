@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/scss/variables.scss';
 .col-6 {
   & img {
     width: 100%;
@@ -45,9 +46,9 @@ export default {
     top: 0;
     left: 0;
     background-color: #00000075;
-    color: #fff;
+    color: $color_base;
     h5 {
-      color: #fff;
+      color: $color_base;
     }
     small {
       font-size: 0.5rem;

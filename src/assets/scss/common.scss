@@ -10,18 +10,28 @@ body {
   color: $color_small;
   font-size: 0.5rem;
 }
+.small_text_bg {
+  font-size: 0.5rem;
+  color: #ffffff91;
+}
 .title {
   padding-top: 1rem;
   color: $color_primary;
   font-weight: 700;
 }
-.p5 {
-  padding: 5rem 0;
-}
 .size_75 {
   font-size: 0.75rem;
 }
-
+.text_numbers {
+  font-size: 3rem;
+}
+.p5 {
+  padding: 5rem 0;
+}
+.pr_6 {
+  padding-right: 6rem;
+}
+/* buttons */
 .btn {
   background-color: $color_primary;
   padding: 0.75rem 0.5rem;
@@ -32,23 +42,12 @@ body {
   width: 135px;
   a {
     text-decoration: none;
-    color: #fff;
+    color: $color_base;
   }
 }
 
-.pr_6 {
-  padding-right: 6rem;
-}
-.small_text_bg {
-  font-size: 0.5rem;
-  color: #ffffff91;
-}
-.text_numbers {
-  font-size: 3rem;
-}
-
 .btn_first {
-  background-color: #fff;
+  background-color: $color_base;
   padding: 0.8rem 1.5rem;
   text-align: center;
   font-size: 0.75rem;
@@ -63,7 +62,7 @@ body {
 .btn_first:hover {
   background-color: $color_primary;
   a {
-    color: #fff;
+    color: $color_base;
   }
 }
 

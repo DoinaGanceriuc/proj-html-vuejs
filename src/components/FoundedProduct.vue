@@ -49,7 +49,7 @@ export default {
     top: 0;
     left: 0;
     background-color: #00000075;
-    color: #fff;
+    color: $color_base;
     p {
       font-size: 0.9rem;
       padding: 1rem;

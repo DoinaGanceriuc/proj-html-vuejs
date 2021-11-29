@@ -241,8 +241,7 @@ export default {
  ************************************/
 .jumbotron {
   background-image: url("../assets/img/hero-header-bakery.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include bg_image_cover_repeat;
   background-position: center;
 }
 /************************************
@@ -256,7 +255,7 @@ section text_jumbo
   }
   & p {
     padding: 2rem 0;
-    color: #8c8693;
+    color: $color_small;
     font-size: 0.75rem;
   }
   .btn_first {
@@ -281,7 +280,7 @@ section text_jumbo
     width: 25px;
     text-align: center;
     line-height: 50px;
-    color: #fff;
+    color: $color_base;
     z-index: 10;
   &.left {
     left: 0;
@@ -299,10 +298,9 @@ section text_jumbo
 section opinions
 ************************************/
 .opinions {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bakery-process-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
+  background: $bg_dark_primary, url("../assets/img/bakery-process-1.jpg");
+  @include bg_image_cover_repeat;
+  color: $color_base;
   .col-6 {
     height: 500px;
     h2 {
@@ -318,10 +316,9 @@ section mass_produced
     height: 500px;
 }
 .baking {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bakery-process-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
+  background: $bg_dark_primary, url("../assets/img/bakery-process-2.jpg");
+  @include bg_image_cover_repeat;
+  color: $color_base;
     h2 {
       font-size: 2.5rem;
     }
@@ -339,10 +336,9 @@ section mass_produced
 section delivered
 ************************************/
 .delivered {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bakery-process-3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
+  background: $bg_dark_primary, url("../assets/img/bakery-process-3.jpg");
+  @include bg_image_cover_repeat;
+  color: $color_base;
     h2 {
       font-size: 2.5rem;
     }
@@ -358,9 +354,8 @@ section orders
 ************************************/
 .orders {
   background-image: url("../assets/img/call-to-action-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
+  @include bg_image_cover_repeat;
+  color: $color_base;
   .col-6 {
      padding: 5rem 0 5rem 5rem;
 
