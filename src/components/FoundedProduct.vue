@@ -31,7 +31,7 @@ export default {
     object-fit: cover;
   }
   .product_text {
-    color: $color_title;
+    color: $color_primary;
     font-size: 0.9rem
   }
 }

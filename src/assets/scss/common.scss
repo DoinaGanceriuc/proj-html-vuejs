@@ -16,7 +16,7 @@ body {
 }
 .title {
   padding-top: 1rem;
-  color: $color_title;
+  color: $color_primary;
   font-weight: 700;
 }
 .p5 {
@@ -27,18 +27,19 @@ body {
 }
 
 .btn {
-  background-color: #55328b;
+  background-color: $color_primary;
   padding: 0.75rem 0.5rem;
   text-align: center;
   font-size: 0.75rem;
   border: none;
-  width: 135px;
   border-radius: 5px;
+  width: 135px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
-a {
-  text-decoration: none;
-  color: #fff;
-}
+
 .pr_6 {
   padding-right: 6rem;
 }
@@ -59,6 +60,20 @@ a {
   border-radius: 5px;
   & a {
     text-decoration: none;
-    color: #614093;
+    color: $color_primary;
+  }
+}
+/* hover */
+.btn_first:hover {
+  background-color: $color_primary;
+  a {
+    color: #fff;
+  }
+}
+
+.btn:hover {
+  background-color: #f0edf5;
+  a {
+    color: $color_primary;
   }
 }

@@ -284,7 +284,7 @@ export default {
 }
 .chevron {
     position: absolute;
-    background-color: #A691B2;
+    background-color: $color_chrevron;
     height: 50px;
     width: 25px;
     text-align: center;
