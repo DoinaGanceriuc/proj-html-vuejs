@@ -4,7 +4,7 @@
       <div class="jumbotron">
         <div class="container">
           <section class="text_jumbo">
-            <small class="small_text">FRESH & TASTY BAKERY EVERY DAY</small>
+            <small class="small_text">FRESH &#38; TASTY BAKERY EVERY DAY</small>
             <h1 class="title">The Perfect Fresh Bread</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
@@ -44,7 +44,7 @@
       <!-- /.cookies -->
       <section class="moments container p5">
          <div class="text-center">
-           <small class="small_text">CORPORATE & WEDDINGS</small>
+           <small class="small_text">CORPORATE &#38; WEDDINGS</small>
           <h2 class="pb-5 title">
             Baking Special Moments
           </h2>
@@ -96,7 +96,7 @@
               <div class="col-8 d-flex flex-column justify-content-between align-items-start">
                  <h2 class="fw-bold mt-2">We Start Baking</h2>
                 <div>
-                <small class="small_text_bg">SWEET & DELICIOUS</small>
+                <small class="small_text_bg">SWEET &#38; DELICIOUS</small>
                 <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ipsum odit dolorum corporis omnis hic fugit accusamus. Magnam, voluptatem, consequuntur at beatae totam quis quaerat nostrum porro, dignissimos laudantium iste.</p>
               </div>
             </div>
@@ -121,7 +121,7 @@
               <div class="col d-flex flex-column justify-content-between align-items-start">
                  <h2 class="fw-bold mt-2">Delivered to your home</h2>
                 <div>
-                <small class="small_text_bg">BAKED TO ORDER & GIFT WRAPPED</small>
+                <small class="small_text_bg">BAKED TO ORDER &#38; GIFT WRAPPED</small>
                 <p class="py-3 pe-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ipsum odit dolorum corporis omnis hic fugit accusamus. Magnam, voluptatem, consequuntur at beatae totam quis quaerat nostrum porro, dignissimos laudantium iste.</p>
               </div>
             </div>

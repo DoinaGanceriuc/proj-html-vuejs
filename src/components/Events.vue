@@ -27,7 +27,7 @@
       <div class="info_events weddings d-flex align-items-center justify-content-center">
         <div class="events_text text-center">
           <small>PRIVATE DINING HALL</small>
-      <h2 class="title">Weddings & Parties</h2>
+      <h2 class="title">Weddings &#38; Parties</h2>
       <div class="btn">
         <a href="#">Explore More</a>
       </div>
