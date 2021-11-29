@@ -46,12 +46,6 @@ export default {
 
 <style lang="scss">
 .col-6 {
-  & img {
-    width: 100%;
-    display: block;
-    height: 100%;
-    object-fit: cover;
-  }
   .info_events {
     visibility: hidden;
     height: 100%;
