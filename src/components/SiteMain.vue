@@ -34,7 +34,7 @@
         <div class="position-relative">
           <span class="chevron left"><i class="fas fa-chevron-left"></i></span>
           <div class="row">
-              <Product v-for="product in products" :key="product.name" :productImage="product.image"
+              <Product v-for="product in products.slice(0, 2)" :key="product.name" :productImage="product.image"
               :productName="product.name" :productPrice="product.price" :productType="product.type"/>
           </div>
           <!-- /.row -->
@@ -65,7 +65,7 @@
         <div class="position-relative">
           <span class="chevron left"><i class="fas fa-chevron-left"></i></span>
           <div class="row">
-            <FoundedProduct v-for="product in foundedProducts" :key="product.name" :productImage="product.image" :productName="product.name" :productPrice="product.price"/>
+            <FoundedProduct v-for="product in products" :key="product.name" :productImage="product.image" :productName="product.name" :productPrice="product.price"/>
           </div>
           <!-- /.row -->
           <span class="chevron right"><i class="fas fa-chevron-right"></i></span>
@@ -196,30 +196,6 @@ export default {
           image: 'strawberry-jam-cookies.jpg',
           price: '$24.00 - $62.00',
           type: 'Cookies, Patries'
-        }
-      ],
-      events: [
-        {
-          name: 'corporate',
-          image: 'corporate-bg.jpg'
-        },
-        {
-          name: 'wedding',
-          image: 'wedding-bg.jpg'
-        }
-      ],
-      foundedProducts: [
-        {
-          name: 'Choco Chip Cookies',
-          image: 'choco-chip-cookies.jpg',
-          price: '$19.00 - $39.00',
-          type: 'Cookies, Patries'
-        },
-        {
-          name: 'Strawberry Jam Cookies',
-          image: 'strawberry-jam-cookies.jpg',
-          price: '$24.00 - $62.00',
-          type: 'Cookies, Patries'
         },
         {
           name: 'Strawberry Donut',
@@ -315,7 +291,6 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  // background-position: center;
   .col-6 {
     height: 500px;
     h2 {
