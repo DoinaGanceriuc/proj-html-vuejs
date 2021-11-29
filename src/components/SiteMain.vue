@@ -34,7 +34,8 @@
         <div class="position-relative">
           <span class="chevron left"><i class="fas fa-chevron-left"></i></span>
           <div class="row">
-              <Product v-for="product in products" :key="product.name" :productImage="product.image"/>
+              <Product v-for="product in products" :key="product.name" :productImage="product.image"
+              :productName="product.name" :productPrice="product.price" :productType="product.type"/>
           </div>
           <!-- /.row -->
           <span class="chevron right"><i class="fas fa-chevron-right"></i></span>
@@ -48,10 +49,7 @@
             Baking Special Moments
           </h3>
          </div>
-         <div class="row">
-            <Product v-for="product in events" :key="product.name" :productImage="product.image"/>
-          </div>
-          <!-- /.row -->
+            <Events/>
       </section>
       <!-- /.moments -->
       <section class="found_product container p5 d-flex">
@@ -176,23 +174,29 @@ import Product from '../components/Product.vue'
 import FoundedProduct from '../components/FoundedProduct.vue'
 import VisitBakery from '../components/VisitBakery.vue'
 import SocialProducts from '../components/SocialProducts.vue'
+import Events from '../components/Events.vue'
 export default {
   components: {
     Product,
     FoundedProduct,
     VisitBakery,
-    SocialProducts
+    SocialProducts,
+    Events
   },
   data () {
     return {
       products: [
         {
-          name: 'choco cookies',
-          image: 'choco-chip-cookies.jpg'
+          name: 'Choco Chip Cookies',
+          image: 'choco-chip-cookies.jpg',
+          price: '$19.00 - $39.00',
+          type: 'Cookies, Patries'
         },
         {
-          name: 'strawberry cookies',
-          image: 'strawberry-jam-cookies.jpg'
+          name: 'Strawberry Jam Cookies',
+          image: 'strawberry-jam-cookies.jpg',
+          price: '$24.00 - $62.00',
+          type: 'Cookies, Patries'
         }
       ],
       events: [
@@ -209,22 +213,26 @@ export default {
         {
           name: 'Choco Chip Cookies',
           image: 'choco-chip-cookies.jpg',
-          price: '$19.00 - $39.00'
+          price: '$19.00 - $39.00',
+          type: 'Cookies, Patries'
         },
         {
           name: 'Strawberry Jam Cookies',
           image: 'strawberry-jam-cookies.jpg',
-          price: '$24.00 - $62.00'
+          price: '$24.00 - $62.00',
+          type: 'Cookies, Patries'
         },
         {
           name: 'Strawberry Donut',
           image: 'strawberry-donut.jpg',
-          price: '$24.00 - $42.00'
+          price: '$24.00 - $42.00',
+          type: 'Cookies, Patries'
         },
         {
           name: 'Perfect Macarons',
           image: 'perfect-macarons.jpg',
-          price: '$18.00 - $52.00'
+          price: '$18.00 - $52.00',
+          type: 'Cookies, Patries'
         }
       ],
       bakeries: [
@@ -290,6 +298,7 @@ export default {
     text-align: center;
     line-height: 50px;
     color: #fff;
+    z-index: 10;
   &.left {
     left: 0;
     top: 50%;
