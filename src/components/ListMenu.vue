@@ -1,9 +1,8 @@
 <template>
   <div>
-    <ul>
-      <li class="active">HOME</li>
-       <li v-for="list in lists" :key="list">{{list.toUpperCase()}}</li>
-       <li><i class="fas fa-shopping-cart"></i></li>
+    <ul class="list_menu">
+       <li v-for="list in lists" :key="list">{{list}}</li>
+       <li class="shop"><i class="fas fa-shopping-cart"></i></li>
     </ul>
 
   </div>
@@ -18,22 +17,27 @@ export default {
 </script>
 
 <style lang="scss">
-ul {
+@import '../assets/scss/variables.scss';
+.list_menu {
   display: flex;
   list-style: none;
+  padding: 0;
   li {
-    padding: 0 1rem;
+    padding-right: 2rem;
     font-size: 0.5rem;
-    color: #74559F;
+    color: $color_primary;
   }
+   .shop {
+      padding: 0 0.5rem;
+    }
   .active {
-      color: #74559F;
+      color: $color_primary;
       &::after {
         content: "";
         display: block;
         width: 30px;
         height: 2px;
-        background-color: #74559F;
+        background-color: $color_primary;
         margin: auto;
         margin-top: 5px;
       }
