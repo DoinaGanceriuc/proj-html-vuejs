@@ -23,10 +23,10 @@
       <section class="cookies container d-flex p5">
         <div class="col-4">
           <small class="small_text">OUR PRODUCTS</small>
-          <h3 class="pb-5 title">
+          <h2 class="pb-5 title">
             All our delectable pastries are backed fresh in our Kitchen very
             morning, and are made with all-natural, all organi ingredients.
-          </h3>
+          </h2>
           <div class="btn">
             <a href="#">Start Shopping</a>
           </div>
@@ -45,20 +45,20 @@
       <section class="moments container p5">
          <div class="text-center">
            <small class="small_text">CORPORATE & WEDDINGS</small>
-          <h3 class="pb-5 title">
+          <h2 class="pb-5 title">
             Baking Special Moments
-          </h3>
+          </h2>
          </div>
             <Events/>
       </section>
       <!-- /.moments -->
       <section class="found_product container p5 d-flex">
-        <div class="col-3 text-center align-self-center pe-4">
-          <h3 class="title">
+        <div class="col-3 text-center pe-3 py-5">
+          <h2 class="title">
             Find a freshly baked product perfect for you
-          </h3>
-          <p class="size_75 text_fresh_product">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam ea totam repellendus nostrum iste veniam rem hic quidem quis error, obcaecati, recusandae accusantium? Cumque sequi in dolores laboriosam maxime!</p>
-          <div class="btn">
+          </h2>
+          <p class="size_75 text_fresh_product mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam ea totam repellendus nostrum iste veniam rem hic quidem quis error, obcaecati, recusandae accusantium? Cumque sequi in dolores laboriosam maxime!</p>
+          <div class="btn mt-3">
             <a href="#">Shop All Products</a>
           </div>
         </div>
@@ -70,7 +70,6 @@
           <!-- /.row -->
           <span class="chevron right"><i class="fas fa-chevron-right"></i></span>
         </div>
-
       </section>
       <!-- /.found_product -->
       <section class="opinions container">
@@ -138,9 +137,9 @@
       <section class="locations container p5">
          <div class="text-center">
            <small class="small_text">LOCATIONS</small>
-          <h3 class="pb-5 title">
+          <h2 class="pb-5 title">
             Visit our Bakeries
-          </h3>
+          </h2>
          </div>
          <div class="row gx-0">
             <VisitBakery v-for="bakery in bakeries" :key="bakery.place" :bakeryImage="bakery.image" :bakeryPlace="bakery.place" :bakeryPhone="bakery.phone" :bakeryTiming="bakery.timing" :bakeryAddress="bakery.address" :class="{bg_color_first: bakery.isActive}"/>
