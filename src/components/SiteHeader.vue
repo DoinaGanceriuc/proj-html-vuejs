@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="sticky-top">
     <header id="site_header">
-      <div class="menu fixed-top">
-         <div class="logo">
-        <img src="../assets/img/avada-bakery-logo.png" alt="logo baker purple" width="125"/>
-      </div>
-      <!-- /.logo -->
-         <ListMenu :lists="lists"/>
+      <div class="menu ">
+         <Logo/>
+         <ul class="list_menu">
+           <li class="active">HOME</li>
+           <ListMenu :lists="lists"/>
+         </ul>
       </div>
  <!-- /.menu -->
     </header>
@@ -16,13 +16,15 @@
 
 <script>
 import ListMenu from '../components/ListMenu.vue'
+import Logo from '../components/Logo.vue'
 export default {
   components: {
-    ListMenu
+    ListMenu,
+    Logo
   },
   data () {
     return {
-      lists: ['shop', 'about', 'gallery', 'locations', 'journal', 'contact', 'my account']
+      lists: ['SHOP', 'ABOUT', 'GALLERY', 'LOCATIONS', 'JOURNAL', 'CONTACT', 'MY ACCOUNT']
 
     }
   }
@@ -38,10 +40,6 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-/* logo */
-.logo {
-  padding-bottom: 1rem;
-}
 }
 }
 
