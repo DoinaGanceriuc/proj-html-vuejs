@@ -236,12 +236,18 @@ export default {
 
 <style lang="scss">
 @import '../assets/scss/variables.scss';
+/*************************************
+ jumbotron
+ ************************************/
 .jumbotron {
   background-image: url("../assets/img/hero-header-bakery.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+/************************************
+section text_jumbo
+************************************/
 .text_jumbo {
   max-width: 330px;
   padding: 9rem 0 9rem 0;
@@ -257,6 +263,9 @@ export default {
     width: 185px;
   }
 }
+/************************************
+ section cookies
+************************************/
 .cookies {
   & h3 {
     font-size: 1.75rem;
@@ -286,6 +295,9 @@ export default {
 .text_fresh_product {
   color: $color_small;
 }
+/************************************
+section opinions
+************************************/
 .opinions {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bakery-process-1.jpg");
   background-size: cover;
@@ -298,6 +310,9 @@ export default {
     }
   }
 }
+/************************************
+section mass_produced
+************************************/
 .mass_produced {
    .col-6 {
     height: 500px;
@@ -320,6 +335,9 @@ export default {
   }
 }
 }
+/************************************
+section delivered
+************************************/
 .delivered {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bakery-process-3.jpg");
   background-size: cover;
@@ -335,6 +353,9 @@ export default {
 .bg_color_first{
   background-color: $bg_color_first;
 }
+/************************************
+section orders
+************************************/
 .orders {
   background-image: url("../assets/img/call-to-action-bg.jpg");
   background-size: cover;

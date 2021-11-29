@@ -37,6 +37,7 @@
     </div>
     <!-- ./col-6 -->
   </div>
+   <!-- ./row-->
 </template>
 
 <script>

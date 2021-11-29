@@ -12,8 +12,10 @@
       <p>{{productPrice}}</p>
       </div>
       </div>
+        <!-- ./info_product -->
     </div>
   </div>
+  <!-- ./col-6 -->
 </template>
 
 <script>

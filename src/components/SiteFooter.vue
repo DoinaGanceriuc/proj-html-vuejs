@@ -11,6 +11,7 @@
          </div>
       </div>
       </div>
+      <!-- ./menu -->
       <ul class="d-flex align-items-center py-3 px-0">
           <ListMenu :lists="lists"/>
          <li class="number_orders">0</li>

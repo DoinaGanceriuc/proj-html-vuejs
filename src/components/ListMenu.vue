@@ -4,7 +4,7 @@
        <li v-for="list in lists" :key="list">{{list}}</li>
        <li class="shop"><i class="fas fa-shopping-cart"></i></li>
     </ul>
-
+     <!-- ./list_menu -->
   </div>
 </template>
 

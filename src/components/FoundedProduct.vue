@@ -14,6 +14,7 @@
       <p>{{productPrice}}</p>
       </div>
   </div>
+   <!-- ./col-3 -->
 </template>
 
 <script>

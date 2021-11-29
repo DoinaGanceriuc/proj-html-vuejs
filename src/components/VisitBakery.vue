@@ -19,7 +19,9 @@
        </div>
       </div>
       </div>
+      <!-- /.bakeries -->
   </div>
+  <!-- /.col-6 -->
 </template>
 
 <script>
